@@ -4,8 +4,9 @@ jQuery(document).ready(function(){
 });
 
 function sketchPad(){
-  createGrid();
+  a = 0;
   random = false;
+  createGrid();
   draw(random);
   setRandom();
   erase();
@@ -60,4 +61,6 @@ function createGrid(size = 16){
     }
     container.append("<br/>");
   }
+  a = 0;
+  draw(random);
 }
